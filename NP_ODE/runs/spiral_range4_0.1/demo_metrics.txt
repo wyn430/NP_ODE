@@ -1,0 +1,2 @@
+test_RMSE:  0.11709275 test_MAPE:  3.4485116
+train_RMSE:  0.09228776 train_MAPE:  0.3717878
