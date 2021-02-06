@@ -56,6 +56,19 @@ e.g. CUDA_VISIBLE_DEVICES = 0 python test.py 30 10 7 1 fea 0 fea_range4_30_10
 ```
 The predicted results are saved in directory ./results in .npz files.
 
+Visualize the predicted results on spiral dataset.
 
+```
+python spiral_results_viz.py [noise level]
 
+e.g. python spiral_results_viz.py [noise level]
+```
+Note that the current visualization is based on the pre-trained models uploaded in directory ./runs and hard coded in the script. If the user would like to use your own models, please edit the script to change the directory of model files.
+
+Visualize the predicted results on FEA dataset. The saved results in .npz files should be copied and moved to directory ../Experiment_Results_Visualization. The visualization tool for FEA dataset is in the jupyter notebook "UQ_Visualization.ipynb" in the directory ../Experiment_Results_Visualization.
+
+### Baseline Methods
+One of the baseline methods is [Attentive Neural Process](https://arxiv.org/abs/1901.05761). The method has been modified to fit our datasets. The usage to train, test, and visualize the results is almost the same as our proposed NP-ODE.
+
+The other baseline methods is Gaussian Process. The implementation of Gaussian Process is based on [scikit-learn](https://scikit-learn.org/stable/). Please refer to 
 
